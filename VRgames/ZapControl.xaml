@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="VRgames.ZapControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VRgames"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid  VerticalAlignment="Center" Height="auto" Width="auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" MinWidth="98"/>
+            <ColumnDefinition Width="194*"/>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="281*"/>
+            <ColumnDefinition Width="47*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock TextWrapping="Wrap" FontSize="20" Foreground="White" HorizontalAlignment="Center" Text="1" x:Name="User_Id" Grid.Column="0" Margin="0,3,0,-0.333" Width="98"/>
+        <Label Foreground="White" FontSize="20" HorizontalAlignment="Center" Content="2" x:Name="time" Grid.Column="1" Margin="0,0,0,-0.333" Width="194"/>
+        <Label Foreground="White" HorizontalAlignment="Center" FontSize="20" Content="3" x:Name="FIO" Grid.Column="2" Margin="0,0,0,-0.333" Width="180"/>
+        <Label Foreground="White" HorizontalAlignment="Center"  FontSize="20" Content="4" x:Name="data" Grid.Column="3" Margin="0,0,0.333,-0.333" Width="281"/>
+        <Button HorizontalAlignment="Right" Click="RemoveElement" Grid.Column="4" Background="DarkBlue" Foreground="White" VerticalAlignment="Bottom" Margin="0,0,5,8.667" Content="X" Width="25" Height="25"/>
+    </Grid>
+</UserControl>

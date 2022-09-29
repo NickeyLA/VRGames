@@ -1,0 +1,48 @@
+﻿<Window x:Class="VRgames.Registr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VRgames"
+        mc:Ignorable="d"
+       Title="VRgames" Height="450" Width="800" WindowState="Maximized" ResizeMode="CanMinimize" Background="#FFB6B9A3" Foreground="#FF2B75A9">
+    <Grid>
+        <StackPanel Margin="-10,0,-0.333,0">
+            <StackPanel.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF121DC5"/>
+                    <GradientStop Color="#FF1B184B" Offset="1"/>
+                </RadialGradientBrush>
+            </StackPanel.Background>
+
+            <StackPanel>
+
+                <StackPanel Grid.Row="0" Margin="0, 210, 0, 0">
+                    <Label Content="Логин" HorizontalAlignment="Center" Foreground="White" FontSize="22" Width="150" Margin="338,0,313.667,0"/>
+                    <Border BorderBrush="#FF121DC5" Background="#FF1B184B" BorderThickness="1" CornerRadius="20,20,20,20" Height="30" Margin="150,0,149.667,0">
+                        <TextBox Height="27" x:Name="LoginField" Text="" Foreground="#FF00E0FF" Background="#FF1B184B" Margin="9.667,-1.333,9,0.333" FontSize="20" BorderBrush="Transparent"/>
+                    </Border>
+
+                </StackPanel>
+
+                <StackPanel Height="185" Margin="0,0,0, 10">
+                    <StackPanel Grid.Row="2">
+                        <Label Foreground="White" Content="Пароль" FontSize="24" HorizontalAlignment="Center" Margin="338,0,306.667,0" Width="150"/>
+                        <Border BorderBrush="#FF121DC5" Background="#FF1B184B" BorderThickness="1" CornerRadius="20,20,20,20" Height="30" Margin="150,0,150,0">
+                            <TextBox Height="27" x:Name="PasswordField" Foreground="#FF00E0FF" Text="" Background="#FF1B184B" Margin="9.667,-1.333,9,-0.667" FontSize="20" BorderBrush="Transparent" SelectionBrush="Snow"/>
+                        </Border>
+                    </StackPanel>
+                    <Button Padding="3" Foreground="White" Click="Registration"  HorizontalAlignment="Center"  Content="Зарегистрироваться" Margin="238,20,253.667,0" Height="40" Width="303" BorderBrush="#FF1B184B" FontSize="22">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF131CAA"/>
+                                <GradientStop Color="#FF1A1568" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+
+</Window>

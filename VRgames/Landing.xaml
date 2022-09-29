@@ -1,0 +1,19 @@
+﻿<Window x:Name="Scroll" x:Class="VRgames.Landing"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VRgames"
+        mc:Ignorable="d"
+         Title="VRgames" Height="2429" Width="1920" WindowState="Maximized" ResizeMode="CanMinimize" Background="#FFB6B9A3" Foreground="#FF2B75A9">
+    <Grid >
+        <ScrollViewer  VerticalScrollBarVisibility="Visible">
+            <Grid>
+                <Image Name="img01" VerticalAlignment="Top" Source="Resources/img01.png" />
+                <Label Content="Предварительная запись" HorizontalAlignment="Left" MouseLeftButtonDown="Last" Margin="10,740,0,0" VerticalAlignment="Top" Height="143" Width="1084" Foreground="White" FontSize="48" FontFamily="Comic Sans MS"/>
+                <Label Content="Что такое VR" HorizontalAlignment="Left" MouseLeftButtonDown="VRClub" Margin="827,10,0,0" VerticalAlignment="Top" Height="73" Width="234" Foreground="White" FontSize="36" FontFamily="Calibri" RenderTransformOrigin="0.504,0.831"/>
+                <Label Content="Наши игры" HorizontalAlignment="Left" MouseLeftButtonDown="VRGames" Margin="1061,10,0,0" VerticalAlignment="Top" Height="73" Width="234" Foreground="White" FontSize="36" FontFamily="Calibri" RenderTransformOrigin="0.712,0.42"/>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>
