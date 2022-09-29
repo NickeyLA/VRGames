@@ -63,12 +63,6 @@ namespace VRgames
                  }
             }
         }
-
-        /*protected override void OnClosed(EventArgs e)
-        {
-            if (!landing.IsActive)
-                landing.Close();
-            base.OnClosed(e);
-        }*/
+        
     }
 }
